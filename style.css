@@ -1,0 +1,169 @@
+
+body {
+    background-image: url(images/pink-glitter.jpg);
+   background-color: rgb(115, 112, 112);
+   margin: 0;
+   padding: 20px;
+   font-family: Arial, Helvetica, sans-serif;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+/* nav bar */
+nav {
+   background-color: rgba(209, 100, 150, 0.8);
+   color: rgb(238, 130, 238);
+   text-align: center;
+   font-size: 30px;
+   font-weight: bold;
+   font-family: cursive;
+   padding: 10px;
+   width: 100%;
+   margin-bottom: 20px;
+}
+
+.calculator {
+   border: 20px solid black;
+   width: 300px;
+   height: 490px;
+   background-color: black;
+   border-radius: 25px;
+   padding: 10px;
+}
+
+#display {
+   background-color: #b11a72;
+   border: 5px solid #e50d2a17;
+   text-align: right;
+   font-size: 24px;
+   font-family: 'Courier New', Courier, monospace;
+   color: white;
+   border-radius: 19px;
+   width: 280px;
+   height: 60px;
+   padding: 0 10px;
+   margin-bottom: 15px;
+   box-shadow: inset 0 2px 8px rgba(0, 0, 0, 0.3);
+   outline: none;
+}
+
+.buttons {
+   display: grid;
+   grid-template-columns: repeat(4, 1fr);
+   gap: 10px;
+   padding: 0;
+}
+
+.btn {
+   padding: 20px;
+   font-size: 18px;
+   border: 1px solid rgb(255, 0, 0);
+   background: rgb(238, 130, 238);
+   cursor: pointer;
+   border-radius: 50px;
+   color: black;
+   font-weight: bold;
+   transition: all 0.2s;
+}
+
+.btn:hover {
+   background-color: #b11a84;
+   transform: scale(1.05);
+}
+
+.btn:active {
+   background-color: rgb(188, 55, 188);
+   transform: scale(0.95);
+}
+
+.btn.zero {
+   grid-column: span 2;
+}
+
+.btn.operator {
+   background-color: rgb(255, 165, 0);
+   color: white;
+}
+
+.btn.operator:hover {
+   background-color: rgb(255, 140, 0);
+}
+
+.btn.equal {
+   background-color: rgb(255, 69, 0);
+   color: white;
+}
+
+.btn.equal:hover {
+   background-color: rgb(255, 50, 0);
+}
+
+/* RESPONSIVE DESIGN - MOBILE */
+@media (max-width: 480px) {
+  body {
+    padding: 10px;
+  }
+  
+  nav {
+    font-size: 24px;
+    padding: 8px;
+  }
+  
+  .calculator {
+    border-width: 15px;
+    width: 280px;
+    height: auto;
+  }
+  
+  #display {
+    width: 250px;
+    height: 50px;
+    font-size: 20px;
+  }
+  
+  .btn {
+    padding: 15px;
+    font-size: 16px;
+  }
+}
+
+/* RESPONSIVE DESIGN - TABLET */
+@media (min-width: 481px) and (max-width: 768px) {
+  .calculator {
+    width: 320px;
+    height: auto;
+  }
+  
+  #display {
+    width: 290px;
+    height: 65px;
+    font-size: 26px;
+  }
+  
+  nav {
+    font-size: 28px;
+  }
+}
+
+/* RESPONSIVE DESIGN - DESKTOP */
+@media (min-width: 769px) {
+  body {
+    padding: 30px;
+  }
+  
+  .calculator {
+    width: 350px;
+  }
+  
+  #display {
+    width: 320px;
+    height: 70px;
+    font-size: 28px;
+  }
+  
+  nav {
+    font-size: 32px;
+  }
+}
+
