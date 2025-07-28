@@ -5,7 +5,8 @@ Features
 - Decimal support (e.g., 3.14)
 - Basic operations: `+`, `−`, `×`, `÷`
 - Clear All (`AC`) button
-- Plus/Minus toggle (`+/-`)
+- Plus/Minus  (`+/-`)
 - Percentage (`%`)
 - Equals (`=`) for calculation
 - Display updates with each button click
+- Display appropriate error messages 
